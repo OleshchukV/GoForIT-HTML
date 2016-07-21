@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    float: left;
+    display: block;
+    background-color: #05060a;
+    overflow: hidden;
+    width: 405px;
+    height: 449px;
+    margin: 50px;
+  }
+
+  table {
+    margin: -8px;
+  }
+
+  td {
+    border: 1px solid #000;
+  }
