@@ -4,7 +4,7 @@
   }
 
   body {
-    background-image: url(..//images/background.png);
+    background-image: url(..//images/background.jpg);
     background-repeat: repeat-x;
     height: 1020px;
   }
@@ -39,11 +39,12 @@
 
   .contacts-clearfix {
 	  float: right;
-	  padding-top: 11px;
+	  padding-top: 5px;
 	  padding-right: 14px;
 	  color: #128aa7;
 	  text-align: left;
 	  font: 12px Tahoma;
+    line-height: 1.6;
   }
 
   .contacts-clearfix:after{
@@ -65,55 +66,112 @@
   .countries {
     position: relative;
     display: inline-block;
-    width: 350px;
-    height: 60px;
+    width: 400px;
+    height: 40px;
     font: 10px Tahoma;
-    margin-top: 40px;
+    margin-top: 28px;
     text-align: center;
+    margin-left: -29px;
+    border: none;
   }
 
-  .countries img {
-    position: relative;
-  }
-
-  .countries a{
+  .countries a {
     color: #128aa7;
+  }
+
+  .countries a:hover {
+    color: red;
   }
 
   .icon1 {
     position: relative;
     display: inline-block;
-    padding: 4px;
+  }
+
+  .icon1 img {
+    display: inline-block;
+    background: url(..//images/India.png) no-repeat center center;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    padding: 0 6px 0 6px;
+    border-radius: 100%;
+    margin: 0 auto;
   }
 
   .icon2 {
     position: relative;
     display: inline-block;
-    padding: 4px;
+  }
+
+  .icon2 img {
+    display: inline-block;
+    background: url(..//images/Nepal.png) no-repeat center center;
+    width: 42px;
+    height: 42px;
+    padding: 0 6px 0 6px;
+    border-radius: 100%;
+    margin: 0 auto;
   }
 
   .icon3 {
     position: relative;
     display: inline-block;
-    padding: 4px;
+  }
+
+  .icon3 img {
+    display: inline-block;
+    background: url(..//images/Tibet.png) no-repeat center center;
+    width: 42px;
+    height: 42px;
+    padding: 0 6px 0 6px;
+    border-radius: 100%;
+    margin: 0 auto;
   }
 
   .icon4 {
-    position: relative;
+    position:relative;
     display: inline-block;
-    padding: 4px;
+  }
+
+  .icon4 img {
+    display: inline-block;
+    background: url(..//images/Butan.png) no-repeat center center;
+    width: 42px;
+    height: 42px;
+    padding: 0 6px 0 6px;
+    border-radius: 100%;
+    margin: 0 auto;
   }
 
   .icon5 {
     position: relative;
     display: inline-block;
-    padding: 2px;
+  }
+
+  .icon5 img {
+    display: inline-block;
+    background: url(..//images/Sri-Lanka.png) no-repeat center center;
+    width: 42px;
+    height: 42px;
+    padding: 0 6px 0 6px;
+    border-radius: 100%;
+    margin: 0 auto;
   }
 
   .icon6 {
     position: relative;
     display: inline-block;
-    padding: 2px;
+  }
+
+  .icon6 img {
+    display: inline-block;
+    background: url(..//images/Maldives.png) no-repeat center center;
+    width: 42px;
+    height: 42px;
+    padding: 0 6px 0 6px;
+    border-radius: 100%;
+    margin: 0 auto;
   }
 
 
@@ -122,21 +180,57 @@
   }
 
   .menu {
-    position: relative;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
   	width: 1000px;
 	  height: 30px;
   	border-top: 1px solid white;
   	border-bottom: 1.5px solid black;
   	background-color: #343434;
   	box-shadow: 0 2px 5px rgba(0,0,0,0.8);
-	}
+    padding-left: 56px;
+  }
+
+  .arrow1 {
+    position: absolute;
+    margin-left: 88px;
+    margin-top: -10px;
+    border-color: white transparent transparent  transparent;
+	  border-style: solid;
+	  border-width: 5px 5px 0 5px;
+	  height: 0px;
+	  width: 0px;
+  }
+
+  .arrow2 {
+    position: absolute;
+    margin-left: 48px;
+    margin-top: -10px;
+    border-color: white transparent transparent  transparent;
+	  border-style: solid;
+	  border-width: 5px 5px 0 5px;
+	  height: 0px;
+	  width: 0px;
+  }
+
+  .arrow3 {
+    position: absolute;
+    margin-left: 75px;
+    margin-top: -10px;
+    border-color: white transparent transparent  transparent;
+	  border-style: solid;
+	  border-width: 5px 5px 0 5px;
+	  height: 0px;
+	  width: 0px;
+  }
 
   .menu ul li {
   	float: left;
 	  list-style-type: none;
 	  text-decoration: none;
-	  padding: 7px 52px 7px 0px;
-    margin-left: 10px;
+    margin-top: 3px;
+	  padding: 2px 58px 2px 10px;
    }
 
    .menu ul li a {
@@ -157,13 +251,17 @@
 
   .menu__drop {
     position: absolute;
+    display: block;
     top: -9999em;
     margin-left: -10px;
-    padding: 5px 0 5px 0;
-    width: 150px;
+    width: auto;
     opacity: 0;
     transition: 0.5s opacity;
     box-shadow: 1px 4px 5px rgba(0,0,0,0.8);
+  }
+
+  .menu__drop ul li {
+    padding: 0px 26px 0px 0px;
   }
 
   .menu__list:hover .menu__drop {
@@ -172,7 +270,13 @@
     background-color: #343434;
   }
 
+  .menu__drop li a:hover {
+    color: #8b8989;
+  }
 
+  .arrow:after {
+    border: 20px solid transparent;	border-left: 20px solid white;
+  }
 
    .info {
 	   float: left;
@@ -184,16 +288,17 @@
 	   border-right: 0.5px solid #c7cacf;
 	   font: 14px Tahoma;
 	   text-align: center;
-	   padding: 15px 17px 17px 17px;
+	   padding: 38px 17px 17px 17px;
 	   line-height: 24px;
    }
 
    .main-info {
 	   float: left;
 	   display: block;
+     box-sizing: border-box;
 	   width: 548px;
 	   height: 513px;
-	   padding: 15px;
+	   padding: 38px 17px 17px 17px;
      font: 14px Tahoma;
    }
 
@@ -207,7 +312,7 @@
 	   color: #424c43;
 	   font: 14px Tahoma;
 	   text-align: center;
-	   padding: 15px 17px 17px 17px;
+	   padding: 38px 17px 17px 17px;
 	   line-height: 24px;
    }
 
