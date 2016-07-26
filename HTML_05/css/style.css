@@ -100,12 +100,18 @@ a.button2:hover {
    margin-top: -10px;
  }
 
-.container {
+ .content {
+   display: block;
+   height: 100vh;
+   min-height: 694px;
+ }
+
+.container_clearfix {
   width: 560px;
   height: 550px;
-  position: absolute;
-  top: 49.2%;
-  left: 52%;
+  position: relative;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
@@ -246,7 +252,19 @@ input:hover {
    0 -2px 2px 2px rgba(77,137,178,.5);
 }
 
-input:active {
+/*input:active {
+  background: rgb(30,75,118);
+  background: -moz-linear-gradient(top,  rgba(30,75,118,1) 0%, rgba(32,76,117,1) 19%, rgba(32,76,117,1) 85%, rgba(30,75,118,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(30,75,118,1) 0%,rgba(32,76,117,1) 19%,rgba(32,76,117,1) 85%,rgba(30,75,118,1) 100%);
+  background: linear-gradient(to bottom,  rgba(30,75,118,1) 0%,rgba(32,76,117,1) 19%,rgba(32,76,117,1) 85%,rgba(30,75,118,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e4b76', endColorstr='#1e4b76',GradientType=0 );
+  box-shadow:
+   0 0 8px rgba(0,0,0,0),
+   0 2px 2px 2px rgba(77,137,178,.5),
+   0 -2px 2px 2px rgba(77,137,178,.5);
+}*/
+
+#enter input:focus {
   background: rgb(30,75,118);
   background: -moz-linear-gradient(top,  rgba(30,75,118,1) 0%, rgba(32,76,117,1) 19%, rgba(32,76,117,1) 85%, rgba(30,75,118,1) 100%);
   background: -webkit-linear-gradient(top,  rgba(30,75,118,1) 0%,rgba(32,76,117,1) 19%,rgba(32,76,117,1) 85%,rgba(30,75,118,1) 100%);
@@ -308,6 +326,7 @@ button:active {
   clear: both;
   padding: 8px 0;
   overflow: hidden;
+  border: none;
 }
 
 .checkbox_conteiner li{
@@ -326,7 +345,14 @@ input[type=checkbox]{
   margin-top: 3px;
   float: left;
   border: none;
+  box-shadow: none;
 }
+
+input[type=checkbox]:focus {
+  border: none;
+  box-shadow: none;
+}
+
 
 .subtext {
   margin-top: 9px;
